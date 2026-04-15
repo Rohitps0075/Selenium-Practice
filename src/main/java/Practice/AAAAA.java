@@ -6,5 +6,6 @@ public class AAAAA {
 
 	public void method() {
 		System.out.println("Nimi method");
+		String username="Nirmala";
 	}
 }
