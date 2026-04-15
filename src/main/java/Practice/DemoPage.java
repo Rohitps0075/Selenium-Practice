@@ -5,4 +5,9 @@ public class DemoPage {
  {
 	 System.out.println("Demo page");
  }
+ 
+ public void demodemo()
+ {
+	 System.out.println(" Demo Demo Page ");
+ }
 }
