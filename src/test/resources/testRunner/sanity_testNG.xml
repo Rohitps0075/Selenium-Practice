@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="TestNG Regression" verbose="3">
+
+	<test name="Data Provider">
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/register"/>
+	<parameter name="browserName" value="chrome"/>
+		<classes>
+			<class name="TestNGPractice.DataProviderConcept" />
+		</classes>
+	</test>
+
+</suite>
+
+
+

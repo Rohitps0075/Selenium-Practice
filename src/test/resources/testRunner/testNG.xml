@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="TestNGRegression" verbose="3" thread-count="3" parallel="tests"> <!-- verbose will tahe the value from 1 to 10, if the verbose value is 1 then we will see very less logs in the concosle
+more the verbose value more logs will be dispalyed in the concosle -->
+
+	<test name="Login Test">
+	<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+	<parameter name="browserName" value="Chrome"/>
+		<classes>
+			<class name="TestNGPractice.LoginTest_With_Using_BaseTest" />
+		</classes>
+	</test>
+
+	<test name="Google Test">
+	<parameter name="url" value="https://www.google.com"/>
+	<parameter name="browserName" value="edge"/>
+		<classes>
+			<class name="TestNGPractice.GoogleTest" />
+		</classes>
+	</test>
+
+	<test name="OrangeHRMTest">
+	<parameter name="url" value="https://www.orangehrm.com/en/30-day-free-trial"/>
+	<parameter name="browserName" value="Chrome"/>
+		<classes>
+			<class name="TestNGPractice.OrangeHRMTest" />
+		</classes>
+	</test>
+
+
+</suite>
+
+<!-- 
+	for parallel execution we need to add the thread-count and parallel=tests
+	there is no range for thread-count but we have giev 5 or 6 max 10 
+	for example we have 100 test blocks and we have given thread-count as 100, so 100 browsers will be opened at a time , out systment config will not able to handle thses many browsers
+	at a time. so should maintain 5 or 6 or max 10.
+	
+	we have 100 test case and we have given the thread-count=5, so thread will be created and we are not sure which tread will take/pick which test block 
+	so in this case the priority and depdends on methods will fail.
+
+	
+-->
