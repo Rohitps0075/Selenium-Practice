@@ -2,9 +2,9 @@ package Practice;
 
 public class AAAAA {
 
-	String name = "Rohit";
+	String name = "Nimi";
 
 	public void method() {
-		System.out.println("Rohit method");
+		System.out.println("Nimi method");
 	}
 }
