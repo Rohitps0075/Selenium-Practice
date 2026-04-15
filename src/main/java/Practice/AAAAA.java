@@ -6,5 +6,6 @@ public class AAAAA {
 
 	public void method() {
 		System.out.println("Nimi method");
+		System.out.println("Lets check conflicts");
 	}
 }
